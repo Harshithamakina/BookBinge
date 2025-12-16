@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <title>My Notes -BookBinge</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a class="logo" href="index.html">BookBinge</a>
+        <nav class="nav-items">
+            <a href="home.html">Home</a>
+            <a href="mynotes.html">My Notes</a>
+            <a href="review.html">Review</a>
+            <a href="search.html">Search</a>
+            <a href="categories.html">Categories</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <h1>My Notes</h1>
+            <p>Manage and view your saved notes here.</p>
+        </section>
+
+        <!-- Notes Section -->
+        <section class="notes-section">
+            <!-- Add New Note Form -->
+            <div class="add-note-form">
+                <input type="text" id="note-title" placeholder="Enter note title">
+                <textarea id="note-content" placeholder="Enter note content"></textarea>
+                <button id="add-note-btn">Add Note</button>
+            </div>
+
+            <!-- Notes List -->
+            <div class="notes-list" id="notes-list">
+                <!-- Notes will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 BookBinge. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="Contact Us.html">Contact Us</a>
+            <a href="About Us.html">About Us</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

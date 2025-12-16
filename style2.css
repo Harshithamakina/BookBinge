@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-items a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+.notes-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.add-note-form {
+    margin-bottom: 20px;
+}
+
+.add-note-form input,
+.add-note-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-note-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.add-note-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-note-form button:hover {
+    background-color: #218838;
+}
+
+.notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.note {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.note p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.note-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.note-actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.note-actions button.delete-btn {
+    background-color: #dc3545;
+}
+
+.note-actions button:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

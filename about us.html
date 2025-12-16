@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>About Us - BookBinge</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a class="logo" href="index.html">BookBinge</a>
+        <nav class="nav-items">
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="about-section">
+            <div class="about-header">
+                <h1>About BookBinge</h1>
+                <p>Your Ultimate Reading Companion</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-mission">
+                    <h2>Our Mission</h2>
+                    <p>At BookBinge, we believe in the transformative power of reading. Our mission is to create a platform that makes reading more accessible, enjoyable, and social for book lovers around the world.</p>
+                </div>
+                
+                <div class="about-story">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2025, BookBinge started as a small project by a group of book enthusiasts who wanted to share their reading experiences. Today, we've grown into a vibrant community of readers who connect, share notes, and discover new books together.</p>
+                </div>
+                
+                <div class="about-features">
+                    <h2>Why Choose BookBinge?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-book-open"></i>
+                            <h3>Extensive Library</h3>
+                            <p>Access thousands of books across all genres</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-pencil-alt"></i>
+                            <h3>Personal Notes</h3>
+                            <p>Take and organize your reading notes</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-users"></i>
+                            <h3>Community</h3>
+                            <p>Connect with fellow book lovers</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-star"></i>
+                            <h3>Reviews</h3>
+                            <p>Share and read honest book reviews</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 BookBinge</p>
+        <div class="footer-links">
+            <a href="Contact Us.html">Contact Us</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script1.js"></script>
+    <script>
+      
+
+        // Load team members
+        document.addEventListener('DOMContentLoaded', function() {
+            const teamContainer = document.getElementById('teamMembers');
+            
+            teamMembers.forEach(member => {
+                const memberHTML = `
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="${member.img}" alt="${member.name}">
+                        </div>
+                        <h3>${member.name}</h3>
+                        <p class="role">${member.role}</p>
+                        <p class="bio">${member.bio}</p>
+                    </div>
+                `;
+                teamContainer.innerHTML += memberHTML;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-items a:hover {
+    color: #ff6f61;
+}
+
+/* Intro Section Styles */
+.intro {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: 48px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.intro p {
+    font-size: 20px;
+    margin: 10px 0 20px;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.intro button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.intro button:hover {
+    background-color: #ff4a3d;
+    transform: scale(1.1);
+}
+
+/* Achievements Section Styles */
+.achievements {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.work i {
+    font-size: 50px;
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+.work h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.work p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer Styles */
+.footer {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff6f61;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

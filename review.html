@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Reviews - BookBinge</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a class="logo" href="index.html">BookBinge</a>
+        <nav class="nav-items">
+            <a href="home.html">Home</a>
+            <a href="mynotes.html">My Notes</a>
+            <a href="review.html">Review</a>
+            <a href="search.html">Search</a>
+            <a href="categories.html">Categories</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <h1>Reviews</h1>
+            <p>Share your thoughts and read what others have to say.</p>
+        </section>
+
+        <!-- Review Form -->
+        <section class="review-form">
+            <h2>Submit Your Review</h2>
+            <form id="reviewForm">
+                <input type="text" id="reviewName" placeholder="Your Name" required>
+                <textarea id="reviewContent" placeholder="Write your review here..." required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+
+        <!-- Reviews List -->
+        <section class="reviews-list">
+            <h2>What Others Are Saying</h2>
+            <div id="reviewsContainer">
+                <!-- Reviews will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 BookBinge. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="Contact Us.html">Contact Us</a>
+            <a href="About Us.html">About Us</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script3.js"></script>
+</body>
+</html>
